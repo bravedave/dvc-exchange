@@ -1,0 +1,50 @@
+<section class="plannerbox">
+	<style>
+	.plannerbox { height: 600px; }
+	.table-header-fixed {
+	    width: 100%;
+	    height: calc( 100%);
+	}
+
+	.table-header-fixed > thead,
+	.table-header-fixed > tbody,
+	.table-header-fixed > thead > tr,
+	.table-header-fixed > tbody > tr,
+	.table-header-fixed > thead > tr > th,
+	.table-header-fixed > tbody > tr > td {
+	    display: block;
+	}
+
+	.table-header-fixed > tbody > tr:after,
+	.table-header-fixed > thead > tr:after {
+	    content: ' ';
+	    display: block;
+	    visibility: hidden;
+	    clear: both;
+	}
+
+	.table-header-fixed > thead > tr > td { height: 20px; }
+	.table-header-fixed > tbody > tr > td { height: 30px; }
+	.table-header-fixed > tbody {
+	    overflow-y: auto;
+	    height: calc( 100% - 20px);
+	}
+
+	.table-header-fixed > tbody > tr > td,
+	.table-header-fixed > thead > tr > td {
+	    width: 20%;
+	    float: left;
+	}
+
+	.dayplanner.table-header-fixed > thead > tr > td { width: 100%; }
+
+	.dayplanner.table-header-fixed > tbody > tr > td:first-of-type { width: 25%; }
+
+	.dayplanner.table-header-fixed > tbody > tr > td:not(:first-of-type),
+	.dayplanner.table-header-fixed > thead > tr > td:not(:first-of-type) {
+	    width: 75%;
+	}
+	/*-- --[]-- --*/
+	</style>
+	<div class="plannerbox" plannerbox></div>
+</section>
