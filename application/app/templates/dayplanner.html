@@ -1,6 +1,12 @@
 <section class="plannerbox">
 	<style>
-	.plannerbox { height: 600px; }
+	html,body { height: 100%; }
+	.main-content-wrapper { height: calc( 100% - 84px ); }
+	.main-content-wrapper > .row,
+	#plannerbox,
+	[data-role="content-primary"],
+	.plannerbox { height: 100%; }
+
 	.table-header-fixed {
 	    width: 100%;
 	    height: calc( 100%);
