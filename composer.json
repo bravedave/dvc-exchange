@@ -21,7 +21,7 @@
 	"require": {
 		"php": ">=7.0",
 		"bravedave/dvc": "dev-master",
-		"php-ews/php-ews": "dev-master",
+		"php-ews/php-ews": "~1.0",
 		"ext-sqlite3": "*"
 
 	}
